@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ant Colony 🌱</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">🐜</span><div><h1>Ant Colony</h1><p>Little ants, big plans.</p></div></div>
+      <div class="stats">
+        <div class="stat"><span>🍓</span><div><small>Food</small><b id="foodCount">0</b></div></div>
+        <div class="stat"><span>🐜</span><div><small>Workers</small><b id="antCount">3</b></div></div>
+        <div class="stat"><span>👑</span><div><small>Queen</small><b>Safe</b></div></div>
+      </div>
+    </header>
+    <section class="game-panel">
+      <div class="game-heading"><div><h2>Your tiny world</h2><p>Gather berries and bring them back to your nest.</p></div><button id="addAnt" class="button secondary">＋ Hatch ant <span>(5 food)</span></button></div>
+      <div class="canvas-wrap"><canvas id="game" aria-label="Ant colony game area"></canvas><div class="toast" id="toast">Find a berry! 🍓</div><div class="map-label label-nest">🏠 HOME</div><div class="map-label label-garden">🍓 BERRY PATCH</div></div>
+      <div class="controls"><div><b>Move your ant</b><span>WASD or arrow keys</span></div><div class="keycaps"><kbd>W</kbd><div><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></div></div><button id="reset" class="button text-button">↻ Restart</button></div>
+    </section>
+    <section class="bottom-grid">
+      <article class="info-card"><div class="card-icon lilac">✦</div><div><h3>Colony goal</h3><p>Collect berries scattered around the garden. Walk over one to pick it up, then return to the anthill to store it.</p></div></article>
+      <article class="info-card"><div class="card-icon mint">♡</div><div><h3>Grow your colony</h3><p>Once you have 5 food, hatch another little worker. Your colony is just getting started!</p></div></article>
+    </section>
+    <footer>Made for curious little builders <span>✿</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
